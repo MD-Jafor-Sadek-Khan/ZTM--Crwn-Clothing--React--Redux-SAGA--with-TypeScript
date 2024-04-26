@@ -9,9 +9,9 @@ import {
 import { UserData } from "../../utils/Firebase-Utils/firebase.utils"
 
 export type UserState = {
-  currentUser: null | UserData
-  isLoading: boolean
-  error: null | Error
+  readonly currentUser: null | UserData
+  readonly isLoading: boolean
+  readonly error: null | Error
 }
 
 const USER_INITIAL_VALUE: UserState = {

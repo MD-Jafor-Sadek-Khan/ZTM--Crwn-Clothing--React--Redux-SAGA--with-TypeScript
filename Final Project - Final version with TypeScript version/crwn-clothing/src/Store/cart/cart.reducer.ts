@@ -4,8 +4,8 @@ import { setCartIconToggle, setCartItems } from "./cart.actions"
 //
 
 export type CartState = {
-  cartToggle: boolean
-  cartItems: CartItem[]
+  readonly cartToggle: boolean
+  readonly cartItems: CartItem[]
 }
 
 const CART_INITIAL_VALUES: CartState = {

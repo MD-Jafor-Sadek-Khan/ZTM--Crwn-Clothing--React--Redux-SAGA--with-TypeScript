@@ -1,7 +1,8 @@
 import { createSelector } from "reselect"
 import { UserState } from "./user.reducer"
+import { RootState } from "../store"
 
-const selectUserSlice = (state): UserState => state.user
+const selectUserSlice = (state:RootState): UserState => state.user
 
 export const selectUserIsLoading = createSelector(
   [selectUserSlice],
