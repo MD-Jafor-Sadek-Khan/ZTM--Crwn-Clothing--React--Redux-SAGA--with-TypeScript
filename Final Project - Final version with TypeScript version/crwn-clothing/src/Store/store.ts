@@ -1,7 +1,7 @@
 import { compose, createStore, applyMiddleware, Middleware } from "redux"
 import logger from "redux-logger"
 import { rootReducer } from "./root-reducer"
-import { persistStore, persistReducer } from "redux-persist"
+import { persistStore, persistReducer, PersistConfig } from "redux-persist"
 import storage from "redux-persist/lib/storage"
 import { rootSaga } from "./root-saga"
 import createSagaMiddleware from "redux-saga"
@@ -29,7 +29,10 @@ const composeEnhancer =
 
 const composeEnhancers = composeEnhancer(applyMiddleware(...middlewares))
 
-const persistConfig = {
+type ExtendedPersistConfig = PersistConfig<RootState> & {
+  whitelist: (keyof RootState)[]
+}
+const persistConfig: ExtendedPersistConfig = {
   key: "root",
   storage,
   whitelist: ["cart"],
