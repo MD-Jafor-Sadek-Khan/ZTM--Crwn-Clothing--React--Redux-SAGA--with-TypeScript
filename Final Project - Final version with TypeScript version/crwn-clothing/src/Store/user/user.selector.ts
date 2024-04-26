@@ -1,10 +1,11 @@
 import { createSelector } from "reselect"
+import { UserState } from "./user.reducer"
 
-const selectUserSlice = (state) => state.user
+const selectUserSlice = (state): UserState => state.user
 
 export const selectUserIsLoading = createSelector(
   [selectUserSlice],
-  (userSlice) => {
+  (userSlice): boolean => {
     return userSlice.isLoading
   }
 )
