@@ -8,9 +8,10 @@ export const CartIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color:#f0f2f5;
-  border-radius:100%;
-
+  background-color: #f0f2f5;
+  border-radius: 100%;
+  @media screen and (max-width: 768px) {
+  }
 `
 
 export const ShoppingIcon = styled.img`
@@ -24,5 +25,6 @@ export const ItemCount = styled.span`
   font-size: 10px;
   font-weight: bold;
   bottom: 12px;
-  color:black;
+  color: black;
+
 `

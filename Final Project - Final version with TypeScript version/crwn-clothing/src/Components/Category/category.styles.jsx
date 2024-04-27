@@ -11,4 +11,9 @@ export const CategoryProductListContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   row-gap: 20px;
   column-gap: 50px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 0;
+  }
 `

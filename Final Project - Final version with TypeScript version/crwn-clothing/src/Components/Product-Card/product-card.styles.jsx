@@ -17,6 +17,7 @@ export const ProductCardImageStyled = styled.img`
   &:hover {
     opacity: 0.8;
   }
+  
 `
 
 export const ProductCardContainerStyled = styled.div`
@@ -30,6 +31,9 @@ export const ProductCardContainerStyled = styled.div`
   &:hover ${ButtonStyled} {
     opacity: 0.85;
     display: flex;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
   }
 `
 
@@ -46,9 +50,26 @@ export const NameStyled = styled.span`
   width: 70%;
   margin-bottom: 15px;
   text-align: start;
+  background-color: white;
+  border-radius: 15px 0 0 15px;
+  padding: 4px;
+  padding-left: 15px;
+  @media (max-width: 768px) {
+    background-color: transparent;
+    color: white;
+    padding-left: 5px;
+  }
 `
 
 export const PriceStyled = styled.span`
   width: 30%;
   text-align: end;
+  background-color: white;
+  padding: 4px;
+  padding-right: 5px;
+  @media (max-width: 768px) {
+    background-color: transparent;
+    color: white;
+    padding-right: 5px;
+  }
 `

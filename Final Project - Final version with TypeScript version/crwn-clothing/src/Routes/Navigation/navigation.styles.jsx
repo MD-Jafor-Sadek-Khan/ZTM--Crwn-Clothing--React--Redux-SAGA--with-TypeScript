@@ -4,10 +4,10 @@ import styled from "styled-components"
 export const NavigationStyled = styled.div`
   position: fixed;
   // background-image: url("https://wallpapercave.com/wp/wp2872423.jpg");
-  background-color:#1d2951;
-  background-size: cover;
-  color:white;
-  background-position: center;
+  background-color: #1d2951;
+  // background-size: cover;
+  color: white;
+  // background-position: center;
   top: 0;
   left: 0;
   padding: 10px 40px;
@@ -16,8 +16,12 @@ export const NavigationStyled = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    justify-content: space-evenly;
+  }
 `
 
 export const LogoContainerStyled = styled(Link)`
@@ -40,7 +44,7 @@ export const NavLinksContainerStyled = styled.div`
 
 export const NavLinkStyled = styled(Link)`
   padding: 10px 15px;
-  color:white;
+  color: white;
 
   cursor: pointer;
 `

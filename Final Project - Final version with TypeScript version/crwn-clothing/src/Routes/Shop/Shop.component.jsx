@@ -5,6 +5,7 @@ import Category from "../../Components/Category/Category.component"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { fetchCategoriesStart } from "../../Store/categories/category.actions"
+import Space from "../../Components/Space/Space.component"
 
 const Shop = () => {
   const dispatch = useDispatch()
@@ -15,7 +16,7 @@ const Shop = () => {
 
   return (
     <Routes>
-      <Route index element={<CategoriesPreview />} />
+      <Route index element={<><Space/><CategoriesPreview /></>} />
       <Route path=":category" element={<Category />} />
     </Routes>
   )

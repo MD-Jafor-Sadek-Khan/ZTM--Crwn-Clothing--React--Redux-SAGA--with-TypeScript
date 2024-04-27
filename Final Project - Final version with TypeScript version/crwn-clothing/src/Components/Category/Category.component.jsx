@@ -12,6 +12,7 @@ import {
   selectCategoryIsLoading,
 } from "../../Store/categories/category.selectors"
 import Spinner from "../Spinner/spinner.component.jsx"
+import Space from "../Space/Space.component.jsx"
 
 const Category = () => {
   const { category } = useParams()
@@ -26,6 +27,7 @@ const Category = () => {
 
   return (
     <Fragment>
+      <Space/>
       <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
 
       {isLoading ? (

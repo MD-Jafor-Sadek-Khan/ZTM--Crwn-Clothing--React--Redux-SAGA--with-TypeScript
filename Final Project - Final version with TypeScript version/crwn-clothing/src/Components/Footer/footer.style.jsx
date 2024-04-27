@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.footer`
   background-color: transparent;
-  border: 5px solid black;
-  background-image: url("https://th.bing.com/th/id/R.76f93f4d23525930c553e71109bae7be?rik=c3ZXeAfq4YcX4w&pid=ImgRaw&r=0");
+  border-top: 5px solid black;
+  // background-image: url("https://wallpapercave.com/wp/wp1969053.jpg");
 
   background-size: cover;
   background-position: center;
-  background-color:#1d2951;
-  width:100%;
+  // background-color:#1d2951;
+  width: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -16,13 +16,14 @@ export const FooterContainer = styled.footer`
   align-items: center;
   gap: 1rem;
   padding: 0.4rem 0.4rem;
-  padding-bottom:0px;
-  margin-top: 50px;
-  border-radius: 20px;
+  padding-bottom: 0px;
+  // border-radius: 20px;
+  margin-top: 100px;
 
   @media screen and (max-width: 768px) {
     text-align: center;
     border: 5px solid transparent;
+    margin-top: 80px;
   }
 `
 
@@ -42,8 +43,8 @@ export const BigSection = styled.section`
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
   max-width: 100%;
 
@@ -61,7 +62,6 @@ export const Section = styled.div`
   @media screen and (max-width: 768px) {
     align-items: center;
     max-width: none;
-    
   }
 `
 
@@ -99,8 +99,7 @@ export const SocialIconLink = styled.a`
 
 export const Copyright = styled.p`
   text-align: center;
-
-  color: black;
+  color: white;
   font-weight: 900;
   font-size: 1rem;
 `

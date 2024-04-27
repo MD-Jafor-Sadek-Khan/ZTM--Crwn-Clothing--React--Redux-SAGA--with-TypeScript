@@ -4,9 +4,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 10px 50px;
-  background-image: url("https://e0.pxfuel.com/wallpapers/452/315/desktop-wallpaper-clouds-tumblr-laptop-white-cloud.jpg");
+  background-image: url("https://th.bing.com/th/id/R.76f93f4d23525930c553e71109bae7be?rik=c3ZXeAfq4YcX4w&pid=ImgRaw&r=0");
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 768px) {
+    padding: 0; /* Adjusted padding for smaller screens */
+  }
 }
 
 code {
