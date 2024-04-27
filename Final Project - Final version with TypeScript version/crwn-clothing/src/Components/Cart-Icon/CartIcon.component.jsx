@@ -11,8 +11,8 @@ import {
   
   selectCartCount,
   selectCartToggle,
-} from "../../Store/cart/cart.selectors.js"
-import { setCartIconToggle } from "../../Store/cart/cart.actions.js"
+} from "../../Store/cart/cart.selectors"
+import { setCartIconToggle } from "../../Store/cart/cart.actions"
 const CartIcon = () => {
   const cartCount = useSelector(selectCartCount)
   const dispatch = useDispatch()

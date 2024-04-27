@@ -10,7 +10,7 @@ import { useSelector } from "react-redux"
 import {
   categoryMapSelector,
   selectCategoryIsLoading,
-} from "../../Store/categories/category.selectors.js"
+} from "../../Store/categories/category.selectors"
 import Spinner from "../Spinner/spinner.component.jsx"
 
 const Category = () => {

@@ -8,7 +8,7 @@ import {
   Total,
 } from "./checkout.styles.jsx"
 import { useSelector } from "react-redux"
-import { selectCartItems, selectCartTotal } from "../../Store/cart/cart.selectors.js"
+import { selectCartItems, selectCartTotal } from "../../Store/cart/cart.selectors"
 import PaymentForm from "../PaymentForm/paymentForm.component.jsx"
 
 const Checkout = () => {

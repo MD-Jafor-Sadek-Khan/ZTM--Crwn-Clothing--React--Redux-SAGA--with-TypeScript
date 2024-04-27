@@ -37,15 +37,18 @@ export const FooterStyled = styled.div`
   width: 100%;
   height: 5%;
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
   font-size: 18px;
 `
 
 export const NameStyled = styled.span`
-  width: 90%;
+  width: 70%;
   margin-bottom: 15px;
+  text-align: start;
 `
 
 export const PriceStyled = styled.span`
-  width: 10%;
+  width: 30%;
+  text-align: end;
 `

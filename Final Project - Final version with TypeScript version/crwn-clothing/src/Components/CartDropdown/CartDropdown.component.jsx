@@ -9,7 +9,7 @@ import {
   EmptyMessage,
 } from "./cart-dropdown.styles.jsx"
 import { useSelector } from "react-redux"
-import { selectCartItems } from "../../Store/cart/cart.selectors.js"
+import { selectCartItems } from "../../Store/cart/cart.selectors"
 
 export const CartDropdown = () => {
 

@@ -13,6 +13,7 @@ export const CartDropdownContainer = styled.div`
   top: 90px;
   right: 50px;
   z-index: 5;
+  color: black;
 `
 
 export const EmptyMessage = styled.span`

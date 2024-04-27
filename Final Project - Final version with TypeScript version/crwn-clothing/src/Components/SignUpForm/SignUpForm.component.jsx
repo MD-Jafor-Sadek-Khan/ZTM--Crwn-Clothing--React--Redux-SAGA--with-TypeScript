@@ -11,7 +11,7 @@ import {
   SignupFormTitleStyled,
 } from "./signup-form.styles.jsx"
 import { useDispatch } from "react-redux"
-import { signUpStart } from "../../Store/user/user.actions.js"
+import { signUpStart } from "../../Store/user/user.actions"
 
 const initialFormFieldValues = {
   displayName: "",

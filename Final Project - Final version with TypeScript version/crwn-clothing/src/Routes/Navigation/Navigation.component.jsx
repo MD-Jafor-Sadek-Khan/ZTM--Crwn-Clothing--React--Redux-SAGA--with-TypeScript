@@ -14,6 +14,8 @@ import { useDispatch, useSelector } from "react-redux"
 import { userSelector } from "../../Store/user/user.selector"
 import { selectCartToggle } from "../../Store/cart/cart.selectors"
 import { signOutStart } from "../../Store/user/user.actions"
+import Footer from "../../Components/Footer/footer.component"
+import Banner from "../../Components/Banner/banner.component"
 
 const Navigation = () => {
   const dispatch = useDispatch()
@@ -22,7 +24,7 @@ const Navigation = () => {
 
   const cartToggle = useSelector(selectCartToggle)
 
-  const handleSignOut = ()=>{
+  const handleSignOut = () => {
     dispatch(signOutStart())
   }
   return (
@@ -45,6 +47,8 @@ const Navigation = () => {
         {cartToggle && <CartDropdown />}
       </NavigationStyled>
       <Outlet />
+
+      <Footer />
     </Fragment>
   )
 }

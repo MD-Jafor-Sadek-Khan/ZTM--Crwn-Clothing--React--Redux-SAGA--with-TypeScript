@@ -9,8 +9,8 @@ import {
   ProductCardImageStyled,
 } from "./product-card.styles.jsx"
 import { useDispatch, useSelector } from "react-redux"
-import { selectCartItems } from "../../Store/cart/cart.selectors.js"
-import { addItemsToCart } from "../../Store/cart/cart.actions.js"
+import { selectCartItems } from "../../Store/cart/cart.selectors"
+import { addItemsToCart } from "../../Store/cart/cart.actions"
 
 const ProductCard = ({ product }) => {
   const { name, imageUrl, price } = product
@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
       <ProductCardImageStyled src={imageUrl} alt={name} />
       <FooterStyled>
         <NameStyled>{name}</NameStyled>
-        <PriceStyled>{price}</PriceStyled>
+        <PriceStyled>${price}</PriceStyled>
       </FooterStyled>
       <ButtonStyled
         buttonType={Button_Type_ClassName.inverted}
