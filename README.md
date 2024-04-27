@@ -1,4 +1,8 @@
 # Getting Started with Create React App
+1. Clone the repositoy
+2. To install use "yarn install"
+3. To run use "yarn start"
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
