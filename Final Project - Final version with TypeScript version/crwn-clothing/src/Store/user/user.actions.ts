@@ -9,6 +9,7 @@ import {
   AdditionalField,
   UserData,
 } from "../../utils/Firebase-Utils/firebase.utils"
+import { User } from "firebase/auth"
 
 export type CheckUserSession = Action<USER_ACTION_TYPE.Check_User_Session>
 
@@ -30,7 +31,7 @@ export const checkUserSession = withMatcher((): CheckUserSession => {
   return createAction(USER_ACTION_TYPE.Check_User_Session)
 })
 
-export const setCurrentUser = withMatcher((user:UserData): SetCurrentUser => {
+export const setCurrentUser = withMatcher((user: UserData): SetCurrentUser => {
   return createAction(USER_ACTION_TYPE.Switch_Current_User, user)
 })
 
@@ -51,9 +52,11 @@ export type SignInSuccess = ActionWithPayload<
   USER_ACTION_TYPE.Sign_In_Success,
   UserData
 >
-export const signInSuccess = withMatcher((user: UserData): SignInSuccess => {
-  return createAction(USER_ACTION_TYPE.Sign_In_Success, user)
-})
+export const signInSuccess = withMatcher(
+  (user: UserData & { id: string }): SignInSuccess => {
+    return createAction(USER_ACTION_TYPE.Sign_In_Success, user)
+  }
+)
 
 export type SignInFalied = ActionWithPayload<
   USER_ACTION_TYPE.Sign_In_Falied,
@@ -84,13 +87,13 @@ export const signUpStart = withMatcher(
 export type SignUpSuccess = ActionWithPayload<
   USER_ACTION_TYPE.Sign_Up_Success,
   {
-    user: UserData
+    user: User
     additionalField: AdditionalField
   }
 >
 
 export const signUpSuccess = withMatcher(
-  (user: UserData, additionalField: AdditionalField): SignUpSuccess => {
+  (user: User, additionalField: AdditionalField): SignUpSuccess => {
     return createAction(USER_ACTION_TYPE.Sign_Up_Success, {
       user,
       additionalField,

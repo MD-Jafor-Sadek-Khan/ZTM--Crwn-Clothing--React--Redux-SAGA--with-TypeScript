@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Button } from "../Button/Buttom.component"
 
 export const PaymentFormContainer = styled.div`
-  margin-top: 30px;
+  // margin-top: 30px;
 
   height: 300px;
   width: 100%;
