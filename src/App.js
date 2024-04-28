@@ -10,6 +10,8 @@ import { checkUserSession } from "./Store/user/user.actions"
 import { useDispatch } from "react-redux"
 import CategoriesPreview from "./Components/Categories-Preview/CategoriesPreview.component"
 import { fetchCategoriesStart } from "./Store/categories/category.actions"
+import FAQ from "./Components/FAQ/faq.component"
+import Space from "./Components/Space/Space.component"
 
 const App = () => {
   const dispatch = useDispatch()
@@ -32,6 +34,15 @@ const App = () => {
           }
         />
         <Route path="/*" element={<Shop />} />
+        <Route
+          path="faq"
+          element={
+            <>
+              <Space />
+              <FAQ />
+            </>
+          }
+        />
         <Route path="shop/*" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
         <Route path="checkout" element={<Checkout />} />
