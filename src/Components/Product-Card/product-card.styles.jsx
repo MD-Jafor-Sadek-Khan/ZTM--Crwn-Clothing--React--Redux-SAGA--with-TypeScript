@@ -7,6 +7,9 @@ export const ButtonStyled = styled(Button)`
   position: absolute;
   top: 255px;
   display: none;
+  @media (max-width: 768px) {
+    top: 170px;
+  }
 `
 
 export const ProductCardImageStyled = styled.img`
@@ -24,7 +27,9 @@ export const ProductCardImageStyled = styled.img`
   }
   @media (max-width: 768px) {
     border-radius: 0;
-    padding:0 15px;
+    padding: 0 5px;
+    height: 70%;
+    margin-bottom: 7px;
   }
 `
 export const ProductCardContainerStyled = styled.div`
@@ -34,13 +39,12 @@ export const ProductCardContainerStyled = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
-
   &:hover ${ButtonStyled} {
     opacity: 0.85;
     display: flex;
   }
   @media (max-width: 768px) {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 `
 
@@ -52,7 +56,7 @@ export const FooterStyled = styled.div`
   justify-content: space-between;
   font-size: 18px;
   @media (max-width: 768px) {
-    padding:0 15px;
+    padding: 0 15px;
   }
 `
 
@@ -67,7 +71,10 @@ export const NameStyled = styled.span`
   @media (max-width: 768px) {
     background-color: transparent;
     color: black;
-    padding-left: 5px;
+    padding: 0;
+    padding-left: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
   }
 `
 
@@ -80,6 +87,7 @@ export const PriceStyled = styled.span`
   @media (max-width: 768px) {
     background-color: transparent;
     color: black;
-    padding-right: 5px;
+    padding: 0;
+    background-color: transparent;
   }
 `

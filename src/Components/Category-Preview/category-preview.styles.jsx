@@ -5,6 +5,9 @@ export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `
 
 export const Title = styled(Link)`
@@ -25,7 +28,7 @@ export const Preview = styled.div`
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     column-gap: 0;
   }
