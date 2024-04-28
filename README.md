@@ -1,8 +1,17 @@
-# Getting Started with Create React App
+#To install and test the Application follow these steps:
+
 1. Clone the repositoy
 2. To install use "yarn install"
 3. To run use "yarn start"
+4. To test stripe:
+   *Use this Test card number "4242 4242 4242 4242" for Card Number field,  
+   *Use a Future date for the "MM/YY" Field. Example: if the current month is April 2024, use May 2024, 
+   *Use "242" for CVC Field
+   *Use "42424" for ZIP Field
 
+
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
