@@ -39,7 +39,7 @@ const CheckoutItem = ({ cartItem }) => {
       <ImageContainer>
         <img src={imageUrl} alt={name} />
       </ImageContainer>
-      <Name>{name}</Name>
+      <Name>{name}&nbsp;</Name>
       <Quantity>
         <Arrow onClick={handleRemoveFromCart}>&#10094;</Arrow>
         <Value>{quantity}</Value>
