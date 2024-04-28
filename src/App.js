@@ -13,6 +13,7 @@ import { fetchCategoriesStart } from "./Store/categories/category.actions"
 import FAQ from "./Components/FAQ/faq.component"
 import Space from "./Components/Space/Space.component"
 import TermsOfService from "./Components/TermsOfService/termsOfService.component"
+import PrivacyPolicy from "./Components/PrivacyPolicy/privacyPolicy.component"
 
 const App = () => {
   const dispatch = useDispatch()
@@ -50,6 +51,15 @@ const App = () => {
             <>
               <Space />
               <TermsOfService />
+            </>
+          }
+        />
+        <Route
+          path="privacy"
+          element={
+            <>
+              <Space />
+              <PrivacyPolicy />
             </>
           }
         />

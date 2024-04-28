@@ -12,6 +12,7 @@ import {
   SocialIconLink,
   SocialIcons,
 } from "./footer.style"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -51,8 +52,25 @@ const Footer = () => {
         </Section>
         <Section>
           <h3>Contact us:</h3>
-          <p>Email: contact@example.com</p>
-          <p>Phone: +8801800000000</p>
+          <p>
+            Email:&nbsp;&nbsp;
+            <a
+              style={{ color: "#00b4d8", fontWeight: "bold" }}
+              href="mailto:rksadeck@gmail.com"
+            >
+              rksadeck@gmail.com
+            </a>
+          </p>
+
+          <p>
+            Phone:&nbsp;&nbsp;
+            <a
+              style={{ color: "#00b4d8", fontWeight: "bold" }}
+              href="tel:+8801829641823"
+            >
+              +8801829641823
+            </a>
+          </p>
         </Section>
         <Section>
           <h3>Quick Links:</h3>
