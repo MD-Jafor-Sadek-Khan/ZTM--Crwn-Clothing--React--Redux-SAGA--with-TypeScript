@@ -60,6 +60,7 @@ const BannerContainer = styled.a`
     height: 100px;
     font-size: 14px;
     text-align: center;
+    margin-bottom: 30px;
   }
 `
 
