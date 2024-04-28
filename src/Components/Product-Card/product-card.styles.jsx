@@ -10,16 +10,19 @@ export const ButtonStyled = styled(Button)`
 `
 
 export const ProductCardImageStyled = styled.img`
+  border-radius: 5px;
   width: 100%;
   height: 95%;
   object-fit: cover;
   margin-bottom: 5px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+
   &:hover {
     opacity: 0.8;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+    transform: scale(1.03); /* Scale up by 10% */
   }
-  
-`
-
+`;
 export const ProductCardContainerStyled = styled.div`
   width: 100%;
   display: flex;
