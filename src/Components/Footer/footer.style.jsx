@@ -66,6 +66,13 @@ export const Section = styled.div`
     border-radius: 5px;
   }
 
+  .about_button {
+    background-color: rgb(23, 23, 23);
+    border: 0;
+    padding: 0;
+    color: #00b4d8;
+    font-weight: bold;
+  }
   @media screen and (max-width: 768px) {
     align-items: center;
     max-width: none;

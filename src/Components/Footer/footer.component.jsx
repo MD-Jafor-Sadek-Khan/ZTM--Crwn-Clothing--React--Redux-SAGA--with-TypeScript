@@ -49,6 +49,11 @@ const Footer = () => {
         <Section>
           <h3>About us:</h3>
           <p>Founded in 1200BC When the Mamoth walked the earth</p>
+          <Link to="/about">
+            <p>
+              <button className="about_button">Read More...</button>
+            </p>
+          </Link>
         </Section>
         <Section>
           <h3>Contact us:</h3>
