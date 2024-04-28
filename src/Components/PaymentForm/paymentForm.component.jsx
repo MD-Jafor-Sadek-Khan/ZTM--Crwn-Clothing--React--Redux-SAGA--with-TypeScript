@@ -60,18 +60,20 @@ const PaymentForm = () => {
   }
 
   return (
-    <PaymentFormContainer>
-      <FormContainer onSubmit={paymentHandler}>
-        <h2>Creadit-Card Payment: </h2>
-        <CardElement />
-        <PaymentButtonStyled
-          isLoading={paymentIsLoading}
-          buttonType={Button_Type_ClassName.inverted}
-        >
-          Pay Now
-        </PaymentButtonStyled>
-      </FormContainer>
-    </PaymentFormContainer>
+    <>
+      <PaymentFormContainer>
+        <FormContainer onSubmit={paymentHandler}>
+          <h2>Creadit-Card Payment: </h2>
+          <CardElement />
+          <PaymentButtonStyled
+            isLoading={paymentIsLoading}
+            buttonType={Button_Type_ClassName.inverted}
+          >
+            Pay Now
+          </PaymentButtonStyled>
+        </FormContainer>
+      </PaymentFormContainer>
+    </>
   )
 }
 

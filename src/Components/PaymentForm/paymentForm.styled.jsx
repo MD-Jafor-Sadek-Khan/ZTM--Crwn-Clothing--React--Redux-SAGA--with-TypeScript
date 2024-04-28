@@ -10,7 +10,7 @@ export const PaymentFormContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0, 0.27);
   padding: 0 50px;
   border-radius: 35px;
   @media screen and (max-width: 768px) {
