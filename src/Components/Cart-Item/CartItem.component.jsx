@@ -16,26 +16,26 @@ const CartItem = ({ cartItem }) => {
   return (
     <CartItemContainer>
       <img src={imageUrl} alt={name} />
-      <ItemDetails>
-        <Name>{name}</Name>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-evenly",
+          width: "100%",
+        }}
+      >
+        <ItemDetails>
+          <Name>{name}</Name>
           <div>
             {quantity}&nbsp;&nbsp; x &nbsp;&nbsp;${price}
           </div>
-          <div>
-            <RemoveButton onClick={handleRemoveCartItemClick}>
-              &#10005;
-            </RemoveButton>
-          </div>
+        </ItemDetails>
+        <div style={{ marginRight: "10px" }}>
+          <RemoveButton onClick={handleRemoveCartItemClick}>
+            &#10005;
+          </RemoveButton>
         </div>
-      </ItemDetails>
+      </div>
     </CartItemContainer>
   )
 }
