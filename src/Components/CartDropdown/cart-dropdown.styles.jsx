@@ -49,9 +49,9 @@ export const CartDropdownContainer = styled.div`
     0.3s ease forwards;
 
   @media (max-width: 768px) {
-    top: 49px;
-    right: 33px;
-    width: 300px;
+    top: 50px;
+    right: 50px;
+    width: 75%;
     height: 520px;
   }
 `

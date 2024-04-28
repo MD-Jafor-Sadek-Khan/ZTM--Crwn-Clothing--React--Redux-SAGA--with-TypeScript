@@ -48,6 +48,7 @@ export const NavLinksContainerStyled = styled.div`
   @media (max-width: 768px) {
     padding-right: 5px;
     width: 70%;
+    margin-right:11px;
   }
 `
 
