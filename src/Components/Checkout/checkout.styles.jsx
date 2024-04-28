@@ -24,7 +24,7 @@ export const CheckoutHeader = styled.div`
     text-align: center;
     margin-bottom: 11px;
     font-weight: 700;
-    margin-right: 3.8rem;
+    margin-right: 3.9rem;
   }
 `
 
