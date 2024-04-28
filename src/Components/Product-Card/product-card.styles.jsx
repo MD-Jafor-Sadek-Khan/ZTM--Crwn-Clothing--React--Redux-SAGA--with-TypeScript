@@ -15,12 +15,17 @@ export const ProductCardImageStyled = styled.img`
   height: 95%;
   object-fit: cover;
   margin-bottom: 5px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 
   &:hover {
     opacity: 0.8;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
-    transform: scale(1.03); 
+    transform: scale(1.03);
+  }
+  @media (max-width: 768px) {
+    border-radius: 0;
+    padding:0 15px;
+  }
 `
 export const ProductCardContainerStyled = styled.div`
   width: 100%;
@@ -46,6 +51,9 @@ export const FooterStyled = styled.div`
   align-items: baseline;
   justify-content: space-between;
   font-size: 18px;
+  @media (max-width: 768px) {
+    padding:0 15px;
+  }
 `
 
 export const NameStyled = styled.span`

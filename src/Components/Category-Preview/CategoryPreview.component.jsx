@@ -4,14 +4,15 @@ import {
   CategoryPreviewContainer,
   Preview,
   Title,
+  TitleCenter,
 } from "./category-preview.styles.jsx"
 const CategoryPreview = ({ title, products }) => {
   return (
     <>
       <CategoryPreviewContainer>
-        <h2>
+        <TitleCenter>
           <Title to={`${title.toLowerCase()}`}>{title}</Title>
-        </h2>
+        </TitleCenter>
         <Preview>
           {products
             .filter((_, index) => index < 4)

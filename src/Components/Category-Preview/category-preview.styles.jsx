@@ -14,6 +14,12 @@ export const Title = styled(Link)`
   // color: white;
 `
 
+export const TitleCenter = styled.h2`
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`
+
 export const Preview = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
