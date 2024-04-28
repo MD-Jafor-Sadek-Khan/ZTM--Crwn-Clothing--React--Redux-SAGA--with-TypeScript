@@ -3,8 +3,11 @@ import { Button, Button_Type_ClassName } from "../Button/Buttom.component"
 import FormInput from "../Form-Input/FormInput.component"
 import {
   ButtonsContainerStyled,
+  GoogleButtonResponsive,
   SignInFormContainerStyled,
   SignInTitleStyled,
+  TextOne,
+  TextTwo,
 } from "./sign-in-form.styles.jsx"
 import { useDispatch } from "react-redux"
 import {
@@ -85,7 +88,14 @@ const SignInForm = () => {
             buttonType={Button_Type_ClassName.google}
             onClick={logGoogleUser}
           >
-            SignIn with Google
+            <GoogleButtonResponsive>
+              <TextOne style={{ position: "relative", top: "15px" }}>
+                SignIn
+              </TextOne>
+              <TextTwo style={{ position: "relative", bottom: "15px" }}>
+                with Google
+              </TextTwo>
+            </GoogleButtonResponsive>
           </Button>
         </ButtonsContainerStyled>
       </form>
