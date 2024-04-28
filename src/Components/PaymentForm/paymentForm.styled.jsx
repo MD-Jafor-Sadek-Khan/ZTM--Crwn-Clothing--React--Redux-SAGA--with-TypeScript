@@ -32,8 +32,8 @@ export const FormContainer = styled.form`
     color: black;
     padding: 10px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0);
-    border: none;
+    background-color: rgba(255,255, 255);
+    border: 2px solid black;
   }
 
   .FormContainer .StripeElement input[type="number"] {
