@@ -8,14 +8,18 @@ export const CartItemContainer = styled.div`
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   img {
-    width: 30%;
+    width: 28%;
   }
-  transition: transform 0.3s ease; 
+  filter: brightness(1);
+  
+  transition: transform 0.3s ease;
 
   &:hover {
-    opacity: 0.8;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
-    transform: scale(1.08); 
+    // opacity: 0.8;
+    // box-shadow: -3px 3px 0 rgba(255, 255, 255);
+    transform: scale(1.08) translateX(10px);
+    font-weight: 700;
+    font-size: 120%;
   }
 `
 export const ItemDetails = styled.div`
