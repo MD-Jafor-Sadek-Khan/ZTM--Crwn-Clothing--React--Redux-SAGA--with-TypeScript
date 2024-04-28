@@ -27,6 +27,7 @@ export const FooterContainer = styled.footer`
     text-align: center;
     border: 5px solid transparent;
     margin-top: 80px;
+    border-radius: 0;
   }
 `
 
@@ -42,6 +43,7 @@ export const BigSection = styled.section`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    border-bottom: 0;
   }
 `
 

@@ -10,6 +10,6 @@ export const AuthFormContainerStyled = styled.div`
     justify-content: center;
     text-align: center;
     row-gap: 60px;
-    color: white;
+    color: black;
   }
 `

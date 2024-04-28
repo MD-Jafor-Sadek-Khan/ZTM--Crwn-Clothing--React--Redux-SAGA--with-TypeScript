@@ -45,18 +45,18 @@ export const Total = styled.span`
 
 export const FormComponentContainer = styled.div`
   width: 40%;
-  max-width: 400px; /* Set maximum width for containment */
+  max-width: 400px; 
   position: fixed;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px; /* Add padding for better spacing */
+  padding: 20px; 
 
   @media screen and (max-width: 768px) {
-    width: 100%; /* Adjust width for responsiveness */
-    max-width: none; /* Reset maximum width */
+    width: 100%; 
+    max-width: none; 
     position: static;
     padding: 0;
     box-sizing: content-box;
@@ -70,7 +70,7 @@ export const CheckoutContainerFlex = styled.div`
   flex-direction: row;
 
   @media (max-width: 768px) {
-    flex-direction: column; // Switches to vertical arrangement on smaller screens
+    flex-direction: column; 
   }
 `
 

@@ -15,14 +15,13 @@ export const ProductCardImageStyled = styled.img`
   height: 95%;
   object-fit: cover;
   margin-bottom: 5px;
-  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+  transition: transform 0.3s ease; 
 
   &:hover {
     opacity: 0.8;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
-    transform: scale(1.03); /* Scale up by 10% */
-  }
-`;
+    transform: scale(1.03); 
+`
 export const ProductCardContainerStyled = styled.div`
   width: 100%;
   display: flex;
@@ -59,7 +58,7 @@ export const NameStyled = styled.span`
   padding-left: 15px;
   @media (max-width: 768px) {
     background-color: transparent;
-    color: white;
+    color: black;
     padding-left: 5px;
   }
 `
@@ -72,7 +71,7 @@ export const PriceStyled = styled.span`
   padding-right: 5px;
   @media (max-width: 768px) {
     background-color: transparent;
-    color: white;
+    color: black;
     padding-right: 5px;
   }
 `
