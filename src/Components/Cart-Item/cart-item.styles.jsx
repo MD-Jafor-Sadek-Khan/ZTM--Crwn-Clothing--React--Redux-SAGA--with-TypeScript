@@ -17,7 +17,7 @@ export const CartItemContainer = styled.div`
   &:hover {
     // opacity: 0.8;
     // box-shadow: -3px 3px 0 rgba(255, 255, 255);
-    transform: scale(1.08) translateX(10px);
+    transform: scaleX(1.05) scaleY(1.08) translateX(5px);
     font-weight: 700;
     font-size: 120%;
   }
