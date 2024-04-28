@@ -10,8 +10,9 @@ export const CheckoutItemContainer = styled.div`
   font-size: 20px;
   align-items: center;
   color: white;
-  background-color: rgb(29, 41, 81, 0.6);
-  border-radius: 15px;
+  background-color: rgb(29, 41, 81, 0.8);
+  border-radius: 8px;
+
 `
 
 export const ImageContainer = styled.div`

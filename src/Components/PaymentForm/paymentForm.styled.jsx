@@ -12,7 +12,7 @@ export const PaymentFormContainer = styled.div`
   align-items: center;
   background-color: rgb(0, 0, 0, 0.27);
   padding: 0 50px;
-  border-radius: 35px;
+  border-radius: 25px;
   @media screen and (max-width: 768px) {
     height: 400px;
     padding: 0 30px;
