@@ -17,6 +17,9 @@ export const PaymentFormContainer = styled.div`
     height: 400px;
     padding: 0 30px;
     height: 250px;
+    margin-top: 60px;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, .12);
   }
 `
 

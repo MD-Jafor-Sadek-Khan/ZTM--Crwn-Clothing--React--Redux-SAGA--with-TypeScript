@@ -17,9 +17,14 @@ export const CheckoutHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   border-bottom: 1px solid darkgrey;
+  margin-bottom: 28px;
   @media (max-width: 768px) {
     text-align: center;
+    margin-bottom: 11px;
+    font-weight: 700;
+    margin-right: 3.8rem;
   }
 `
 

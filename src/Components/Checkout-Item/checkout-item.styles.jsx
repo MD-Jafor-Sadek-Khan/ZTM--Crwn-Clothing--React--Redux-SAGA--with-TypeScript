@@ -4,7 +4,7 @@ export const CheckoutItemContainer = styled.div`
   width: 100%;
   display: flex;
   min-height: 100px;
-  margin: 5px 0;
+  margin: 11px 0;
   // border-bottom: 1px solid darkgrey;
   padding: 15px 11px;
   font-size: 20px;
@@ -12,7 +12,11 @@ export const CheckoutItemContainer = styled.div`
   color: white;
   background-color: rgb(29, 41, 81, 0.8);
   border-radius: 8px;
-
+  @media screen and (max-width: 768px) {
+    border-radius: 0;
+    margin: 11px 0;
+    background-color: rgb(29, 41, 81, 0.8);
+  }
 `
 
 export const ImageContainer = styled.div`
