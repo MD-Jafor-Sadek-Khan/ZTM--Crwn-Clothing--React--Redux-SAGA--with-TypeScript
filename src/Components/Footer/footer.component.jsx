@@ -52,7 +52,7 @@ const Footer = () => {
         <Section>
           <h3>Contact us:</h3>
           <p>Email: contact@example.com</p>
-          <p>Phone: +1234567890</p>
+          <p>Phone: +8801800000000</p>
         </Section>
         <Section>
           <h3>Quick Links:</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
         </Section>
       </BigSection>
 
-      <Copyright>© 2024 Your Company. All rights reserved.</Copyright>
+      <Copyright>© 2024 Crwn Clothing. All rights reserved.</Copyright>
     </FooterContainer>
   )
 }
