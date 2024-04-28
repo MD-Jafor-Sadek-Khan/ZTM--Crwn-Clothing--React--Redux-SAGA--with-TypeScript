@@ -9,13 +9,15 @@ import {
   EmptyMessage,
 } from "./cart-dropdown.styles.jsx"
 import { useSelector } from "react-redux"
-import { selectCartItems, selectCartToggle } from "../../Store/cart/cart.selectors"
+import {
+  selectCartItems,
+  selectCartToggle,
+} from "../../Store/cart/cart.selectors"
 
 export const CartDropdown = () => {
-
   const cartItems = useSelector(selectCartItems)
-  const isOpen = useSelector(selectCartToggle)
-  
+  const isopen = useSelector(selectCartToggle)
+
   const navigate = useNavigate()
 
   const handleCheckoutNavigation = () => {
@@ -23,7 +25,7 @@ export const CartDropdown = () => {
   }
 
   return (
-    <CartDropdownContainer isOpen={isOpen}>
+    <CartDropdownContainer isopen={isopen}>
       <CartItems>
         {cartItems.length > 0 ? (
           cartItems.map((item) => {

@@ -48,7 +48,8 @@ const SignUpForm = () => {
     }
 
     try {
-      dispatch(signUpStart(email, password, displayName ))
+      console.log("submit form",email, password, displayName)
+      dispatch(signUpStart(email, password, displayName))
       clearFormFields()
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {

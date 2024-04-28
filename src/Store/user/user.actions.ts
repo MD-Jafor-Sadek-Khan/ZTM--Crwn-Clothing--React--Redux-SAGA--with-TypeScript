@@ -76,11 +76,17 @@ export type SignUpStart = ActionWithPayload<
 >
 export const signUpStart = withMatcher(
   (email: string, password: string, displayName: string): SignUpStart => {
-    return createAction(USER_ACTION_TYPE.Sign_Up_Start, {
+    console.log("sign up start",email, password, displayName)
+
+    const createdFunction = createAction(USER_ACTION_TYPE.Sign_Up_Start, {
       email,
       password,
       displayName,
     })
+
+    console.log("created function", createdFunction);
+    return createdFunction
+    
   }
 )
 

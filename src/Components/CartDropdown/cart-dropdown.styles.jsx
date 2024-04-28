@@ -26,31 +26,33 @@ const fadeOutAnimation = keyframes`
 `
 
 export const CartDropdownContainer = styled.div`
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/89b87ee4-45fe-4497-a810-4056caa31bb8/dangg9m-9524c00c-ac8b-4848-90d9-273dbad5278a.jpg/v1/fill/w_1024,h_672,q_75,strp/amalfi_coast___sunset_by_federicoparlato_dangg9m-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjcyIiwicGF0aCI6IlwvZlwvODliODdlZTQtNDVmZS00NDk3LWE4MTAtNDA1NmNhYTMxYmI4XC9kYW5nZzltLTk1MjRjMDBjLWFjOGItNDg0OC05MGQ5LTI3M2RiYWQ1Mjc4YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.keF082hBCiEfHtXq27LHVY5v9Fw7x4nalxWkAy-dfVw");
+  // background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/89b87ee4-45fe-4497-a810-4056caa31bb8/dangg9m-9524c00c-ac8b-4848-90d9-273dbad5278a.jpg/v1/fill/w_1024,h_672,q_75,strp/amalfi_coast___sunset_by_federicoparlato_dangg9m-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjcyIiwicGF0aCI6IlwvZlwvODliODdlZTQtNDVmZS00NDk3LWE4MTAtNDA1NmNhYTMxYmI4XC9kYW5nZzltLTk1MjRjMDBjLWFjOGItNDg0OC05MGQ5LTI3M2RiYWQ1Mjc4YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.keF082hBCiEfHtXq27LHVY5v9Fw7x4nalxWkAy-dfVw");
   background-size: cover;
   background-position: center;
   position: absolute;
-  width: 260px;
-  height: 340px;
+  width: 300px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid black;
+  // border: 1px solid black;
   background-color: white;
   top: 48px;
   right: 72px;
   z-index: 5;
   color: black;
   border-radius: 15px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 5px 16px rgba(0, 0, 0, 0.7);
 
   /* Animation */
-  animation: ${({ isOpen }) => (isOpen ? fadeInAnimation : fadeOutAnimation)}
+  animation: ${({ isopen }) => (isopen ? fadeInAnimation : fadeOutAnimation)}
     0.3s ease forwards;
 
   @media (max-width: 768px) {
     top: 49px;
     right: 33px;
+    width: 260px;
+    height: 340px;
   }
 `
 
@@ -64,7 +66,9 @@ export const EmptyMessage = styled.span`
 `
 
 export const CartItems = styled.div`
-  height: 240px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,9 +76,11 @@ export const CartItems = styled.div`
   flex-grow: 1;
   flex: 1;
   overflow: auto;
-  background-color: rgb(0, 0, 0, 0.7);
+  // background-color: rgb(0, 0, 0, 0.7); v2
+  background-color: rgb(0, 0, 0);
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
+  // border-radius: 10px; v2
   margin-bottom: 5px;
 
   /* Hide scrollbar for Webkit browsers */
@@ -88,4 +94,6 @@ export const CartItems = styled.div`
 `
 export const ButtonStyled = styled(Button)`
   margin-top: auto;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
 `

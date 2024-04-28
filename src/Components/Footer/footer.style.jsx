@@ -7,7 +7,7 @@ export const FooterContainer = styled.footer`
 
   background-size: cover;
   background-position: center;
-  // background-color:#1d2951;
+  background-color:#1d2951;
   width: 100%;
   color: #fff;
   display: flex;

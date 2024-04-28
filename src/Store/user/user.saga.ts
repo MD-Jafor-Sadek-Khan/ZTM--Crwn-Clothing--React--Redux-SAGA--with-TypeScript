@@ -56,6 +56,9 @@ export function* singInAfterSignUp({
 export function* signUp({
   payload: { email, password, displayName },
 }: SignUpStart) {
+
+  console.log("inside 'sign up' saga function ",email, password, displayName)
+
   try {
     const userCredential = yield* call(
       createAuthUserFromEmailAndPassword,
@@ -118,6 +121,8 @@ export function* isUserAuthenticated() {
 }
 
 export function* onSignUpStart() {
+  console.log('inside saga');
+  
   yield* takeLatest(USER_ACTION_TYPE.Sign_Up_Start, signUp)
 }
 

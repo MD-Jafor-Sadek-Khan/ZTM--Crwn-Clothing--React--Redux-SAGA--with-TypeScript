@@ -24,6 +24,9 @@ export const userReducer = (
   state = USER_INITIAL_VALUE,
   action: UnknownAction
 ): UserState => {
+
+  console.log("inside reducer",action)
+
   if (signInSuccess.match(action)) {
     return {
       ...state,
