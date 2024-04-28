@@ -15,6 +15,9 @@ export const Title = styled(Link)`
   margin-bottom: 25px;
   cursor: pointer;
   // color: white;
+  @media (max-width: 768px) {
+    margin-top: 25px;
+  }
 `
 
 export const TitleCenter = styled.h2`
