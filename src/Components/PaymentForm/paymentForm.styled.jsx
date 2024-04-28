@@ -41,12 +41,10 @@ export const FormContainer = styled.form`
     }
   }
 
-  .FormContainer .StripeElement input[type="number"] {
-    color: black !important;
-  }
   .StripeElement--focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(0, 0, 255, 0.7);
+    box-shadow: 0 0 0 2px  rgba(0, 0, 255, 0.7);
   }
 `
 
