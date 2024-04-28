@@ -14,6 +14,7 @@ import FAQ from "./Components/FAQ/faq.component"
 import Space from "./Components/Space/Space.component"
 import TermsOfService from "./Components/TermsOfService/termsOfService.component"
 import PrivacyPolicy from "./Components/PrivacyPolicy/privacyPolicy.component"
+import About from "./Components/About/about.component"
 
 const App = () => {
   const dispatch = useDispatch()
@@ -60,6 +61,15 @@ const App = () => {
             <>
               <Space />
               <PrivacyPolicy />
+            </>
+          }
+        />
+        <Route
+          path="about"
+          element={
+            <>
+              <Space />
+              <About />
             </>
           }
         />
