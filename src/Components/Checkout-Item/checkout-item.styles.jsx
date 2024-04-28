@@ -10,12 +10,19 @@ export const CheckoutItemContainer = styled.div`
   font-size: 20px;
   align-items: center;
   color: white;
-  background-color: rgb(29, 41, 81, 0.8);
+  background-color: rgb(29, 41, 81, 0.1);
+  border: 2px solid black;
+  color: black;
   border-radius: 8px;
   @media screen and (max-width: 768px) {
     border-radius: 0;
-    margin: 11px 0;
-    background-color: rgb(29, 41, 81, 0.8);
+    margin: 18px 0;
+    // background-color: rgb(29, 41, 81, 0.8);
+    background-color: rgb(29, 41, 81, 0.1);
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
   }
 `
 
