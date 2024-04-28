@@ -14,7 +14,7 @@ const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  // font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #f8f9fa;
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);

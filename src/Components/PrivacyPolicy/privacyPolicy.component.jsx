@@ -1,5 +1,5 @@
-import React from "react"
-import styled, { keyframes } from "styled-components"
+import React from "react";
+import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
   from {
@@ -8,13 +8,13 @@ const fadeIn = keyframes`
   to {
     opacity: 1;
   }
-`
+`;
 
 const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  // font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #f8f9fa;
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px;
   }
-`
+`;
 
 const Title = styled.h1`
   color: #333;
@@ -34,32 +34,38 @@ const Title = styled.h1`
     font-size: 28px;
     margin-bottom: 20px;
   }
-`
+`;
 
 const SectionTitle = styled.h2`
   color: #555;
   font-size: 28px;
   margin-top: 40px;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-`
+  margin-bottom: 10px;
+`;
 
 const Paragraph = styled.p`
   color: #777;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 15px;
   }
-`
+`;
 
 const List = styled.ul`
   color: #777;
@@ -70,11 +76,11 @@ const List = styled.ul`
   @media screen and (max-width: 768px) {
     font-size: 18px;
   }
-`
+`;
 
 const ListItem = styled.li`
   margin-bottom: 8px;
-`
+`;
 
 const Link = styled.a`
   color: #007bff;
@@ -84,13 +90,13 @@ const Link = styled.a`
   &:hover {
     color: #0056b3;
   }
-`
+`;
 
 const Separator = styled.hr`
   border: 0;
   border-top: 2px solid #ccc;
   margin: 30px 0;
-`
+`;
 
 const PrivacyPolicy = () => {
   return (
@@ -160,7 +166,7 @@ const PrivacyPolicy = () => {
         <Link href="mailto:rksadeck@gmail.com">rksadeck@gmail.com</Link>
       </Paragraph>
     </Container>
-  )
-}
+  );
+};
 
-export default PrivacyPolicy
+export default PrivacyPolicy;

@@ -8,11 +8,13 @@ import {
   FooterContainer,
   LinkItem,
   LinkList,
+  Paragraph,
   Section,
   SocialIconLink,
   SocialIcons,
 } from "./footer.style"
 import { Link } from "react-router-dom"
+import { EmphasizedText } from "../About/about.component"
 
 const Footer = () => {
   return (
@@ -48,12 +50,19 @@ const Footer = () => {
       <BigSection>
         <Section>
           <h3>About us:</h3>
-          <p>Founded in 1200BC When the Mamoth walked the earth</p>
-          <Link to="/about">
-            <p>
-              <button className="about_button">Read More...</button>
-            </p>
-          </Link>
+          <p>
+            <Paragraph>
+              Welcome to <EmphasizedText>CRWN Clothing</EmphasizedText>, where{" "}
+              <EmphasizedText>fashion</EmphasizedText> meets{" "}
+              <EmphasizedText>passion</EmphasizedText> and{" "}
+              <EmphasizedText>style</EmphasizedText> is{" "}
+              <EmphasizedText>limitless</EmphasizedText>. Step into a world
+              where&nbsp;{" "}
+              <Link className="about_button" to="/about">
+                Read More...
+              </Link>
+            </Paragraph>
+          </p>
         </Section>
         <Section>
           <h3>Contact us:</h3>
@@ -79,17 +88,19 @@ const Footer = () => {
         </Section>
         <Section>
           <h3>Quick Links:</h3>
-          <LinkList>
-            <LinkItem>
-              <a href="/faq">FAQ</a>
-            </LinkItem>
-            <LinkItem>
-              <a href="/terms">Terms of Service</a>
-            </LinkItem>
-            <LinkItem>
-              <a href="/privacy">Privacy Policy</a>
-            </LinkItem>
-          </LinkList>
+          <p>
+            <LinkList>
+              <LinkItem>
+                <a href="/faq">FAQ</a>
+              </LinkItem>
+              <LinkItem>
+                <a href="/terms">Terms of Service</a>
+              </LinkItem>
+              <LinkItem>
+                <a href="/privacy">Privacy Policy</a>
+              </LinkItem>
+            </LinkList>
+          </p>
         </Section>
       </BigSection>
 

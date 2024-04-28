@@ -33,7 +33,7 @@ const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  font-family: "Montserrat", sans-serif;
+  // font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,9 +75,9 @@ const Title = styled.h1`
   }
 `;
 
-const Paragraph = styled.p`
+export const Paragraph = styled.p`
   color: #34495e;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.6;
   text-align: justify;
   margin-bottom: 20px;
@@ -97,12 +97,12 @@ const Paragraph = styled.p`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
 `;
 
-const EmphasizedText = styled.span`
+export const EmphasizedText = styled.span`
   font-weight: bold;
   color: #d53c2c; /* Red */
   transition: color 0.3s ease;

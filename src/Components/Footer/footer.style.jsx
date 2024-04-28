@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 export const FooterContainer = styled.footer`
   background-color: transparent;
@@ -65,6 +65,11 @@ export const Section = styled.div`
     padding: 8px 18px 11px 18px;
     border-radius: 5px;
   }
+  &:last-child {
+    p {
+      background-color: transparent;
+    }
+  }
 
   .about_button {
     background-color: rgb(23, 23, 23);
@@ -73,6 +78,7 @@ export const Section = styled.div`
     color: #00b4d8;
     font-weight: bold;
   }
+
   @media screen and (max-width: 768px) {
     align-items: center;
     max-width: none;
@@ -138,5 +144,43 @@ export const LinkItem = styled.div`
     &:hover {
       color: #ffd700; /* Gold on hover */
     }
+  }
+`
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+export const Paragraph = styled.p`
+  color: #758a9f;
+  // font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: ${fadeIn} 1s ease forwards;
+  position: relative;
+  cursor: pointer;
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+  }
+
+  @media screen and (max-width: 768px) {
+    // font-size: 18px;
+    margin-bottom: 15px;
   }
 `

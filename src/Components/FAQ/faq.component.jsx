@@ -13,26 +13,49 @@ const fadeIn = keyframes`
   }
 `
 
+const zoom = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`
+
 const FAQContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #ffffff;
-  border-radius: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  animation: ${fadeIn} 0.5s ease-in-out;
+  animation: ${fadeIn} 1s ease;
 `
 
 const FAQHeading = styled.h2`
   font-size: 36px;
   margin-bottom: 30px;
-  color: #333333;
+  color: #2c3e50;
   text-align: center;
 `
 
 const FAQItem = styled.div`
   margin-bottom: 40px;
   animation: ${fadeIn} 0.5s ease-in-out;
+  position: relative;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+  }
 `
 
 const FAQQuestion = styled.h3`
@@ -43,8 +66,19 @@ const FAQQuestion = styled.h3`
 
 const FAQAnswer = styled.p`
   font-size: 18px;
-  color: #777777;
+  color: #34495e;
   line-height: 1.6;
+`
+
+const FAQLink = styled.a`
+  color: #1478fb;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #e74c3c;
+  }
 `
 
 const FAQ = () => {
@@ -86,11 +120,11 @@ const FAQ = () => {
         <FAQQuestion>5. How can I contact customer support?</FAQQuestion>
         <FAQAnswer>
           You can reach our dedicated customer support team via email at{" "}
-          <a style={{ color: "#00b4d8", fontWeight:'bold' }} href="mailto:rksadeck@gmail.com">
-            rksadeck@gmail.com
-          </a>{" "}
-          or by phone at 1-800-CRWN-HELP. Our support representatives are
-          available 24/7 to assist you with any inquiries or concerns.
+          <FAQLink href="mailto:rksadeck@gmail.com">rksadeck@gmail.com</FAQLink>{" "}
+          or by phone at{" "}
+          <FAQLink href="tel:+8801829641823">+8801829641823</FAQLink>. Our
+          support representatives are available 24/7 to assist you with any
+          inquiries or concerns.
         </FAQAnswer>
       </FAQItem>
     </FAQContainer>
