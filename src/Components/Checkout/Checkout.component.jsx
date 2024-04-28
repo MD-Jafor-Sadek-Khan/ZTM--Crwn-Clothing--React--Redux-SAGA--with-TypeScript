@@ -23,7 +23,7 @@ const Checkout = () => {
   return (
     <>
       <Space />
-      <h1 style={{ color: "white", textAlign: "center" }}>Checkout</h1>
+      <h1 style={{ color: "black", textAlign: "center" }}>Checkout</h1>
       <CheckoutContainer>
         <CheckoutContainerFlex>
           <CheckoutContainerWidth>

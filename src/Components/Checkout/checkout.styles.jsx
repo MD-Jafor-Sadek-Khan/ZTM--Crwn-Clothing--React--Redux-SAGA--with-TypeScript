@@ -7,7 +7,7 @@ export const CheckoutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
-  color: white;
+  color: black;
   font-weight: 500;
 `
 

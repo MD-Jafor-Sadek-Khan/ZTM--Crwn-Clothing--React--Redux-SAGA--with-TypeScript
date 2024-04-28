@@ -10,6 +10,7 @@ export const CartItemContainer = styled.div`
   img {
     width: 30%;
   }
+  
 `
 export const ItemDetails = styled.div`
   width: 70%;
