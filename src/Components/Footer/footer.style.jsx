@@ -7,7 +7,8 @@ export const FooterContainer = styled.footer`
 
   background-size: cover;
   background-position: center;
-  background-color:#1d2951;
+  // background-color:rgb(23, 23, 23, 0.2);
+  background-color: black;
   width: 100%;
   color: #fff;
   display: flex;
@@ -17,8 +18,10 @@ export const FooterContainer = styled.footer`
   gap: 1rem;
   padding: 0.4rem 0.4rem;
   padding-bottom: 0px;
-  // border-radius: 20px;
+  border-radius: 20px;
   margin-top: 100px;
+  border: 4px solid white;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -34,6 +37,8 @@ export const BigSection = styled.section`
   justify-content: center;
   align-items: baseline;
   text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -54,7 +59,7 @@ export const Section = styled.div`
     border-radius: 0 50px 0 50px;
   }
   p {
-    background-color: black;
+    background-color: rgb(23, 23, 23);
     padding: 8px 18px 11px 18px;
     border-radius: 5px;
   }
@@ -79,7 +84,7 @@ export const SocialIconLink = styled.a`
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
-  background-color: black;
+  background-color: rgb(23, 23, 23);
   padding: 3% 7%;
   border-radius: 100%;
   &:hover {
@@ -117,7 +122,7 @@ export const LinkItem = styled.div`
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
-    background-color: black;
+    background-color: rgb(23, 23, 23);
     padding: 8px 18px 11px 18px;
     border-radius: 5px;
 
