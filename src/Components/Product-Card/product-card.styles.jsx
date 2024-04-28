@@ -28,7 +28,7 @@ export const ProductCardImageStyled = styled.img`
   @media (max-width: 768px) {
     border-radius: 0;
     padding: 0 5px;
-    height: 70%;
+    height: 100%;
     margin-bottom: 7px;
   }
 `
@@ -44,7 +44,8 @@ export const ProductCardContainerStyled = styled.div`
     display: flex;
   }
   @media (max-width: 768px) {
-    // margin-bottom: 50px;
+    margin-bottom: 20px;
+    height: 250px;
   }
 `
 

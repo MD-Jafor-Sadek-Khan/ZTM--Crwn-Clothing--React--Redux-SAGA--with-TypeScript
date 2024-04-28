@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import styled, { keyframes, css } from "styled-components";
+import React, { useState, useEffect } from "react"
+import styled, { keyframes, css } from "styled-components"
 
 const mesmerize = keyframes`
   0% {
@@ -11,7 +11,7 @@ const mesmerize = keyframes`
   100% {
     transform: scale(1) rotate(0deg);
   }
-`;
+`
 
 const arrowAnimation = keyframes`
   0% {
@@ -29,7 +29,7 @@ const arrowAnimation = keyframes`
   100% {
     transform: translateY(0);
   }
-`;
+`
 
 const BannerContainer = styled.a`
   background-image: url("https://images.unsplash.com/photo-1674202750524-22084f6a3d71?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -55,11 +55,22 @@ const BannerContainer = styled.a`
   &:not([animated]) {
     animation: ${mesmerize} 5s ease-in-out;
   }
-`;
+
+  @media (max-width: 768px) {
+    height: 100px;
+    font-size: 14px;
+    text-align: center;
+  }
+`
 
 const BannerText = styled.h1`
   margin: 0;
-`;
+  @media (max-width: 768px) {
+    background-color: black;
+    padding: 8px 18px 4px 18px;
+    border-radius: 5px;
+  }
+`
 
 const DownArrow = styled.span`
   font-size: 5rem;
@@ -71,41 +82,47 @@ const DownArrow = styled.span`
     css`
       animation: ${arrowAnimation} 5s ease-in-out;
     `}
-`;
+
+  @media (max-width: 768px) {
+    color: black;
+    font-size: 4rem;
+    font-weignt: 700;
+  }
+`
 
 const Banner2 = () => {
-  const [animated, setAnimated] = useState(false);
+  const [animated, setAnimated] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const bannerOffset = document.getElementById("banner").offsetTop;
+      const scrollPosition = window.scrollY
+      const bannerOffset = document.getElementById("banner").offsetTop
 
       if (scrollPosition > bannerOffset && !animated) {
-        setAnimated(true);
-        window.removeEventListener("scroll", handleScroll);
+        setAnimated(true)
+        window.removeEventListener("scroll", handleScroll)
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [animated]);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [animated])
 
   const handleClick = () => {
-    const scrollAmount = 500;
+    const scrollAmount = 500
     window.scrollBy({
       top: scrollAmount,
       behavior: "smooth",
-    });
-  };
+    })
+  }
 
   useEffect(() => {
     if (animated) {
-      setAnimated(false); // Stop animation after it has occurred once
+      setAnimated(false) // Stop animation after it has occurred once
     }
-  }, [animated]);
+  }, [animated])
 
   return (
     <BannerContainer id="banner" animated={animated} onClick={handleClick}>
@@ -114,7 +131,7 @@ const Banner2 = () => {
         &darr;
       </DownArrow>
     </BannerContainer>
-  );
-};
+  )
+}
 
-export default Banner2;
+export default Banner2
