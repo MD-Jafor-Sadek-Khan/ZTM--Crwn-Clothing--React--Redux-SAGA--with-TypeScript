@@ -10,16 +10,18 @@ export const PaymentFormContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0, 0.27);
+  background-color: rgb(0, 0, 0, 0.12);
   padding: 0 50px;
   border-radius: 25px;
+  border: 2px solid black;
   @media screen and (max-width: 768px) {
     height: 400px;
     padding: 0 30px;
     height: 250px;
     margin-top: 60px;
     border-radius: 0;
-    background-color: rgb(0, 0, 0, .12);
+    background-color: rgb(0, 0, 0, 0.12);
+    border: none;
   }
 `
 
@@ -32,8 +34,11 @@ export const FormContainer = styled.form`
     color: black;
     padding: 10px;
     border-radius: 5px;
-    background-color: rgba(255,255, 255);
+    background-color: rgba(255, 255, 255);
     border: 2px solid black;
+    @media screen and (max-width: 768px) {
+      border: 1px solid black;
+    }
   }
 
   .FormContainer .StripeElement input[type="number"] {

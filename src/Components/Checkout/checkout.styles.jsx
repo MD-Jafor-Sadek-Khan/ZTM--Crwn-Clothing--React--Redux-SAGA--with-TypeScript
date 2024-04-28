@@ -43,8 +43,11 @@ export const HeaderBlock = styled.div`
 export const Total = styled.span`
   margin-left: auto;
   font-size: 36px;
+  margin-right:5px;
+  margin-top:10px;
   @media screen and (max-width: 768px) {
     margin-top: 30px;
+    margin-right:8px;
   }
 `
 
