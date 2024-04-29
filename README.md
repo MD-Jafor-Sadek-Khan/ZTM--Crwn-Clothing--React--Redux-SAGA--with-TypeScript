@@ -1,14 +1,3 @@
-#To install and test the Application follow these steps:
-
-1. Clone the repositoy
-2. To install use "yarn install"
-3. To run use "yarn start"
-4. To test stripe:
-   *Use this Test card number "4242 4242 4242 4242" for Card Number field,  
-   *Use a Future date for the "MM/YY" Field. Example: if the current month is April 2024, use May 2024, 
-   *Use "242" for CVC Field
-   *Use "42424" for ZIP Field
-
 # Crwn Clothing
 
 ## Overview
@@ -46,7 +35,7 @@ To install and test Crwn Clothing, follow these steps:
 5. To test the Stripe integration, follow the instructions provided in the payment section of the application.
 
     - Use the test card number: 4242 4242 4242 4242
-    - Use a future date for the "MM/YY" field.
+    - Use a future date for the "MM/YY" field. Example: if the current month is April 2024, use May 2024.
     - Use "242" for the CVC field.
     - Use "42424" for the ZIP code field.
 
