@@ -9,75 +9,47 @@
    *Use "242" for CVC Field
    *Use "42424" for ZIP Field
 
+# Crwn Clothing
 
+## Overview
 
-# Getting Started with Create React App
+Welcome to Crwn Clothing! This is a progressive web application (PWA) built with React, Redux, Redux Saga, and TypeScript.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation and Testing
 
-## Available Scripts
+To install and test Crwn Clothing, follow these steps:
 
-In the project directory, you can run:
+1. Clone the repository to your local machine:
 
-### `npm start`
+    ```
+    git clone https://github.com/MD-Jafor-Sadek-Khan/ZTM--Crwn-Clothing--React--Redux-SAGA--with-TypeScript.git
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ```
+    cd ZTM--Crwn-Clothing--React--Redux-SAGA--with-TypeScript
+    ```
 
-### `npm test`
+3. Install the necessary dependencies using Yarn:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```
+    yarn install
+    ```
 
-### `npm run build`
+4. Run the application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```
+    yarn start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. To test the Stripe integration, follow the instructions provided in the payment section of the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Use the test card number: 4242 4242 4242 4242
+    - Use a future date for the "MM/YY" field.
+    - Use "242" for the CVC field.
+    - Use "42424" for the ZIP code field.
 
-### `npm run eject`
+## Additional Support
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you encounter any issues during installation or testing, or if you have any questions about Crwn Clothing, feel free to contact our support team at [rksadeck@gmail.com](mailto:rksadeck@gmail.com).
